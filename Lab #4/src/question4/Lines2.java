@@ -1,6 +1,5 @@
 package question4;
 
-// Draw lines using a loop
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
@@ -23,19 +22,15 @@ public class Lines2 extends JPanel {
         int count = 0;
 
         // draws lines in a pattern between adjacent edges
-        while ( count < increments ){
+        while (count < increments){
             // left to bottom
-            g.drawLine(0, count * heightStep,
-                    (count+1) * widthStep, height);
+            g.drawLine(0, count * heightStep, (count+1) * widthStep, height);
             // right to top
-            g.drawLine(width, count * heightStep,
-                    width - (count+1) * widthStep, height);
+            g.drawLine(width, count * heightStep, width - (count+1) * widthStep, height);
             // right to bottom
-            g.drawLine( width, height - count * heightStep,
-                    width - (count+1) * widthStep, 0 );
+            g.drawLine( width, height - count * heightStep, width - (count+1) * widthStep, 0);
             // left to top
-            g.drawLine( 0, height - count * heightStep,
-                    ( count + 1 ) * widthStep, 0 );
+            g.drawLine( 0, height - count * heightStep, (count+1) * widthStep, 0);
 
             count++;
         }
