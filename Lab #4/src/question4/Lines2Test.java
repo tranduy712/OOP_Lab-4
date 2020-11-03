@@ -9,7 +9,7 @@ public class Lines2Test {
         // create a new frame
         JFrame application = new JFrame();
 
-        application.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+        application.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         // add the panel to the frame
         application.add(panel);
         // set the size
